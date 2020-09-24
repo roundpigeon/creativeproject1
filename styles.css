@@ -1,0 +1,21 @@
+body {
+  background-image: url("glitch-background.png");
+  background-attachment: fixed;
+
+}
+
+#lovelettertext {
+  color: white;
+  font-size: 7em;
+  font-family: 'Share Tech', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding-top: 3em;
+  padding-bottom: 3em;
+}
+
+#bottomcontent {
+  background-color: white;
+}
