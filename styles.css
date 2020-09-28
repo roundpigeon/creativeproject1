@@ -1,21 +1,99 @@
 body {
-  background-image: url("glitch-background.png");
+  background-image: url("test-background4.png");
   background-attachment: fixed;
+  font-family: 'Montserrat', sans-serif;
+}
 
+.navbar {
+  background-color: #cae7ed !important;
 }
 
 #lovelettertext {
   color: white;
-  font-size: 7em;
+  font-size: 5.5em;
   font-family: 'Share Tech', sans-serif;
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
-  padding-top: 3em;
-  padding-bottom: 3em;
+  padding-top: 2.5em;
+  padding-bottom: 2.5em;
 }
 
-#bottomcontent {
-  background-color: white;
+.navbar-brand {
+  font-family: 'Share Tech', sans-serif;
+  font-size: 2.5em;
+}
+
+.bottomcontent {
+  background-color: #cae7ed;
+  font-size: 2.5em;
+}
+
+.text-over-image {
+  /* position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white; */
+  /* background-color: rgba(0, 0, 0, 0.5); */
+  font-size: 2rem;
+  padding: .5rem .5rem .5rem .5rem;
+  text-align: center;
+}
+
+.text-over-image:hover {
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: -1;
+}
+
+.image-right {
+  text-align: right;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.image-center {
+  text-align: center;
+  font-size: 1.5rem;
+  padding: .5rem .5rem .5rem .5rem;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #cae7ed;
+  text-align: center;
+  font-size: 1.25em;
+}
+
+.main-page-content {
+  background-color: #cae7ed;
+  padding: 2.5em 2.5em 2.5em 2.5em;
+}
+
+.top {
+  margin-top: 2.5em;
+}
+
+#signature {
+  margin-top: 2.5em;
+  padding: 1.5em 1.5em .5em 1.5em;
+}
+
+#github {
+  padding: .5em 1.5em 1.5em 1.5em;
+}
+
+.bio {
+  padding: 2.5em 2.5em 2.5em 2.5em;
+  font-size: 1.5rem;
+  text-align: left;
+}
+
+#links {
+  display: flex;
+  justify-content: space-around;
+  padding: 1.5em 1.5em 1.5em 1.5em;
 }

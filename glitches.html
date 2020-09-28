@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css" type="text/css" />
+    <link href="https://fonts.googleapis.com/css2?family=Share+Tech&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+
+    <title>Rachel's Glitch Website</title>
+  </head>
+  <body>
+    <div class="container">
+      <!-- Navbar -->
+      <nav class="row navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="index.html">Rachel's Glitch Showcase</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="glitches.html">
+                Glitches
+              </a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link" href="games.html">
+                Games
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="people.html">Communities</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <div class="row main-page-content top">
+        <div class="col">
+          <span styles="text-align: center;"><h1>My Favorite Glitches</h1></span>
+          <hr>
+          <p>This page will eventually have tons of descriptions of different glitches
+            and links to pages about them, but due to time constraints, I can't include
+            all of that right now. Instead, I'll just describe a glitch from the Pokémon
+            series.
+        </div>
+      </div>
+      <div class="row main-page-content top">
+        <div class="col">
+          <h2>The Old Man Glitch</h2>
+          <p>This is one of the most famous video game glitches of all time. In Pokémon
+            Red and Blue, it's possible to encounter a nonexistent Pokémon called
+            Missingno through the use of a glitch involving a non-playable character known
+            as the Old Man.</p>
+          <p>Shortly after the beginning of the game, you're given the option to talk to the Old Man.
+            He will give you a short tutorial on how to catch a Pokémon. During this tutorial,
+            all of the game's controls are disabled and a cutscene plays.</p>
+          <p> If you progress far enough through the game to reach Cinnabar Island, go back and
+            talk to the Old Man, fly back into Cinnabar, and walk along the coast, you have a
+            high chance of encountering Missingno.</p>
+          <p>The reason this happens is because the programmers of Pokémon Red and Blue
+            forgot to include data for what Pokémon can be encountered on the shoreline.
+            The game compensates for this by reading from whatever Pokémon data was last
+            stored in that area of memory. Throughout the normal course of gameplay, this
+            would just end up being Pokémon data from whatever area you just walked through. </p>
+          <p>There's another component, however: when the Old Man demonstrates how to catch
+            a Pokémon, the game needs to write over your name data so that it will show that
+            the Old Man caught a Pokémon instead of you. For the purposes of the
+            cutscene, it temporarily stores your name in a part of memory where wild Pokémon
+            data is normally stored, because once you walk into another part of the world,
+            the data will just be overwritten and everything will be fine. Once the cutscene
+            ends, you get your name back, but that same name data is still where wild Pokémon
+            data should be.</p>
+          <p>By flying directly into Cinnabar from the town where the Old Man is located, you
+            don't give the game a chance to overwrite that wild Pokémon data, so when you walk
+            along the coast, the Pokémon you encounter are determined by the characters in your
+            name. Since several possible letters in a player's name point to unused data,
+            the game is forced to use an error handler (Missingno) to make sure it doesn't crash.</p>
+            </thead>
+          </main>
+        </div>
+        <div class="col image-right">
+          <img src="missingno.png">
+          <p>An encounter with Missingno.</p>
+        </div>
+      </div>
+      <div class="row main-page-content top">
+        <div class="col">
+          <h2>The Pomeg Glitch</h2>
+          <p>Coming soon</p>
+        </div>
+        <div class="col image-right">
+          <img src="pomeg-glitch.png">
+        </div>
+      </div>
+      <div class="row main-page-content top">
+        <div class="col">
+          <h2>Glitch Cities</h2>
+          <p>Coming soon</p>
+        </div>
+        <div class="col image-right">
+          <img src="glitch-city.jpg">
+        </div>
+      </div>
+
+
+      <div class="row footer" id="signature">
+        Made in 2020 by Rachel Peterson
+      </div>
+      <div class="row footer" id="github">
+        <a href="https://github.com/roundpigeon/creativeproject1">Github</a>
+      </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>
